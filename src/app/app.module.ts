@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { CoreComponent } from './core/core.component';
 import { InsideCoreImageComponent } from './core/inside-core-image/inside-core-image.component';
+import { InsideCoreParcoursComponent } from './core/inside-core-parcours/inside-core-parcours.component';
+import { InsideCoreProjetComponent } from './core/inside-core-projet/inside-core-projet.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     CoreComponent,
-    InsideCoreImageComponent
+    InsideCoreImageComponent,
+    InsideCoreParcoursComponent,
+    InsideCoreProjetComponent
   ],
   imports: [
     BrowserModule,
