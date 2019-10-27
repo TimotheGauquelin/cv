@@ -51,3 +51,41 @@ li {
     display: inline-block;
     margin-left: 50px;
 }
+
+//----------MEDIA QUERIES----------//
+
+@media screen and (max-width: 375px) {
+
+#nomblocheader {
+    height: 100%;
+    width: 70%;
+    margin-left: 10px;
+    //Flex//
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    & p {
+        font-weight: bold;
+    }
+}
+ 
+#directionblocheader {
+    height: 100%;
+    width: 30%;
+    margin-right: 0px;
+    //Flex//
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    & p{
+        color: white;
+    }
+    & a:visited {
+        color: white;
+        color: black;
+    }
+    & a:link {
+        text-decoration: none;
+    }
+}
+}
