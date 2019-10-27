@@ -12,7 +12,7 @@
                             <p> Pupuce - Projet pour Faches-Thusmenil </p>
                         </div>
                         <div class="buttonOfTheProjectBlock">
-                            <div class=buttonSeeMore><p>En voir plus !</p></div>
+                            <div class=buttonSeeMore (click)="displayPupuceBlock()"><p>En voir plus !</p></div>
                         </div>
                     </div>
                 </div>
@@ -31,3 +31,4 @@
     </div>
     <div class="blankBlock"></div>
 </div>
+<div id="projetPupuceBlock" *ngIf=showPupuceBlock></div>

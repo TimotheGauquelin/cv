@@ -7,9 +7,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InsideCoreProjetComponent implements OnInit {
 
+  public showPupuceBlock = false;
+  public showNutriplusBlock = false;
+  public buttonName = 'Show'
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  displayPupuceBlock() {
+    this.showPupuceBlock = !this.showPupuceBlock;
+    if (this.showPupuceBlock) {
+      this.buttonName = 'Hide';
+    } else {
+      this.buttonName = 'Show';
+    }
+  }
+
+  displayNutriplusBlock() {
+    this.showNutriplusBlock = !this.showNutriplusBlock;
+    if (this.showNutriplusBlock) {
+      this.buttonName = 'Hide';
+    } else {
+      this.buttonName = 'Show';
+    }
+  }
 }

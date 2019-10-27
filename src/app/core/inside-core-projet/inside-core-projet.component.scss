@@ -129,6 +129,14 @@
         font-size: 15px;    }
 }
 
+#projetPupuceBlock {
+    height: 500px;
+    width: 100%;
+    background-color: #a1bee6;
+    display: flex;
+    flex-direction: column;
+}
+
 
 //----------MEDIA QUERIES----------//
 
@@ -218,3 +226,4 @@
 
     }
 }
+
