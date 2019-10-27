@@ -18,7 +18,7 @@ import { FooterComponent } from './footer/footer.component';
     InsideCoreImageComponent,
     InsideCoreParcoursComponent,
     InsideCoreProjetComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
