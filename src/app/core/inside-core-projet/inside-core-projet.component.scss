@@ -130,12 +130,69 @@
 }
 
 #projetPupuceBlock {
-    height: 500px;
+    height: 700px;
     width: 100%;
-    background-color: #a1bee6;
+    display: flex;
+    flex-direction: row;
+}
+
+.insideSpecificProjectBlock {
+    height: 100%;
+    width: 64%;
+    background-color: #122947;
     display: flex;
     flex-direction: column;
 }
+
+.blankSpecificProjectBlock{
+        height: 100%;
+        width: 18%;
+        background-color: #5c93d9;
+        //Flex//
+        display: flex;
+}
+
+.titleSpecificProjectBlock{
+    height: 10%;
+    width: 100%;
+    background-color: #471244;
+    //Flex//
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & p {
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+        color:#ffffff;
+        font-size: 26px;
+    }
+}
+
+.descSpecificProjectBlock{
+    height: 12%;
+    width: 100%;
+    background-color: #bb9d1a;
+    //Flex//
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & p {
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+        color:#ffffff;
+        font-size: 22px;
+    }
+}
+
+.usedToolsSpecificProjectBlock {
+    height: 10%;
+    width: 100%;
+    background-color: #dad6c5;
+    //Flex//
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 
 //----------MEDIA QUERIES----------//
