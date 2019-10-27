@@ -58,6 +58,8 @@ margin: 0;
 #blocaproposdemoisubbottom {
     height: 70%;
     width: 100%;
+    max-height: 70%;
+    min-width: 100%;
     //Flex//
     display: flex;
     flex-direction: row;

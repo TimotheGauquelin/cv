@@ -4,5 +4,22 @@
     background-color: #5c93d9;
     //Flex//
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+}
+
+.blankBlock {
+    height: 100%;
+    width: 10%;
+    background-color: red;
+    //Flex//
+    display: flex;
+}
+
+#insideProjectBlock {
+    height: 100%;
+    width: 80%;
+    background-color:blue;
+    //Flex//
+    display: flex;
+    flex-direction: row;
 }
