@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {SlideshowModule} from 'ng-simple-slideshow';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -18,11 +18,13 @@ import { FooterComponent } from './footer/footer.component';
     InsideCoreImageComponent,
     InsideCoreParcoursComponent,
     InsideCoreProjetComponent,
-    FooterComponent,
+    FooterComponent
   ],
+
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SlideshowModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

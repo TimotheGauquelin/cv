@@ -5,7 +5,7 @@ import { Component} from '@angular/core';
   templateUrl: './inside-core-projet.component.html',
   styleUrls: ['./inside-core-projet.component.scss']
 })
-export class InsideCoreProjetComponent{
+export class InsideCoreProjetComponent {
 
   public showPupuceBlock = false;
   public showNutriplusBlock = false;
