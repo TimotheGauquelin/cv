@@ -12,8 +12,12 @@ export class InsideCoreProjetComponent {
     { url: 'assets/PupuceImage/accueil.jpg', backgroundSize: 'contain', backgroundPosition: 'center' },
     { url: 'assets/PupuceImage/informations.jpg', backgroundSize: 'contain', backgroundPosition: 'center' },
     { url: 'assets/PupuceImage/informations2.jpg', backgroundSize: 'contain', backgroundPosition: 'center' },
+    { url: 'assets/PupuceImage/informationsvalidées.jpg', backgroundSize: 'contain', backgroundPosition: 'center' },  
     { url: 'assets/PupuceImage/justificatifs.jpg', backgroundSize: 'contain', backgroundPosition: 'center' },
-    { url: 'assets/PupuceImage/informationsvalidées.jpg', backgroundSize: 'contain', backgroundPosition: 'center' },
+    { url: 'assets/PupuceImage/emplacement.jpg', backgroundSize: 'contain', backgroundPosition: 'center' },
+    { url: 'assets/PupuceImage/emplacement2.jpg', backgroundSize: 'contain', backgroundPosition: 'center' },
+    { url: 'assets/PupuceImage/paiement.jpg', backgroundSize: 'contain', backgroundPosition: 'center' },
+    { url: 'assets/PupuceImage/inscriptionTerminee.jpg', backgroundSize: 'contain', backgroundPosition: 'center' },
   ];
   public showPupuceBlock = false;
   public showNutriplusBlock = false;
