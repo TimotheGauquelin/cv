@@ -1,4 +1,5 @@
 import { Component} from '@angular/core';
+import { IImage } from 'ng-simple-slideshow';
 
 @Component({
   selector: 'app-inside-core-projet',
@@ -7,6 +8,13 @@ import { Component} from '@angular/core';
 })
 export class InsideCoreProjetComponent {
 
+  imagePupuce: (string | IImage)[] = [
+    { url: 'assets/PupuceImage/accueil.jpg', backgroundSize: 'contain', backgroundPosition: 'center' },
+    { url: 'assets/PupuceImage/informations.jpg', backgroundSize: 'contain', backgroundPosition: 'center' },
+    { url: 'assets/PupuceImage/informations2.jpg', backgroundSize: 'contain', backgroundPosition: 'center'},
+    { url: 'assets/PupuceImage/justificatifs.jpg',backgroundSize: 'contain', backgroundPosition: 'center'},
+    { url: 'assets/PupuceImage/informationsvalidées.jpg', backgroundSize: 'contain', backgroundPosition: 'center'},
+  ];
   public showPupuceBlock = false;
   public showNutriplusBlock = false;
   public buttonName = 'Show';

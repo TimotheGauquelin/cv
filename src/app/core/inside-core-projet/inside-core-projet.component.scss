@@ -1,3 +1,8 @@
+slideshow {
+    height: 476px;
+    width: 1100px;
+}
+
 #projectBlock {
     height: 600px;
     width: 100%;
@@ -139,7 +144,7 @@
 .insideSpecificProjectBlock {
     height: 100%;
     width: 64%;
-    background-color: #122947;
+    background-color:  #97b9e5;
     display: flex;
     flex-direction: column;
 }
@@ -147,7 +152,7 @@
 .blankSpecificProjectBlock{
         height: 100%;
         width: 18%;
-        background-color: #5c93d9;
+        background-color:  #97b9e5;
         //Flex//
         display: flex;
 }
@@ -155,7 +160,7 @@
 .titleSpecificProjectBlock{
     height: 10%;
     width: 100%;
-    background-color: #471244;
+    background-color:  #97b9e5;
     //Flex//
     display: flex;
     justify-content: center;
@@ -188,7 +193,7 @@
 .descSpecificProjectBlock{
     height: 12%;
     width: 100%;
-    background-color: #bb9d1a;
+    background-color:  #97b9e5;
     //Flex//
     display: flex;
     justify-content: center;
@@ -203,13 +208,25 @@
 .usedToolsSpecificProjectBlock {
     height: 10%;
     width: 100%;
-    background-color: #dad6c5;
+    //Flex//
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        height: 60px;
+        width: 60px;
+        margin-left: 10px;
+    }
+}
+
+.showslideSpecificProjectBlock {
+    height: 68%;
+    width: 100%;
     //Flex//
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 
 
 
