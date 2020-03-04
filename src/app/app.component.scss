@@ -1,3 +1,161 @@
-:host {
-    flex-flow: column;
+.background-img {
+  height: calc(100vh - 70px);
+  width: 100%;
+  //Flex//
+  & img {
+    width: 100%;
+    height: 100%;
+  }
 }
+
+.download-cv {
+  height: 90px;
+  width: 230px;
+  background-color: rgba(171, 187, 194, 0.75);
+  position: absolute;
+  bottom: 170px;
+  //Police//
+  font-size: 20px;
+  &:hover {
+    background-color: rgba(171, 187, 194, 1);
+    cursor: pointer;
+  }
+  & a:link {
+    color: black;
+    text-decoration: none;
+  }
+  & img {
+    height: 25px;
+    width: 25px;
+  }
+}
+
+#blocaproposdemoi {
+  padding: 80px calc(50vw - 50% - 8px) 65px;
+
+  .key {
+    height: 400px;
+    max-width: 330px;
+    background-color:  #5c93d9;    ;
+    font-size: 16px;
+    margin: 5px 10px;
+    padding: 5px 0;
+    outline: #fff solid 3px;
+    outline-offset: -10px;
+
+    & img {
+      height: 110px;
+      width: 110px;
+    }
+
+    & .title {
+      font-size: 20px;
+      margin-top: 25px;
+      font-family: Verdana, sans-serif;
+    }
+
+    & .description {
+      padding: 0 30px;
+      font-size: 16px;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: justify;
+    }
+  }
+}
+
+#projects {
+  padding: 80px calc(50vw - 50% - 8px) 65px;
+  background-color: #5c93d9;
+
+  .row {
+    margin: 0 calc(50% - 50vw + 8px);
+  }
+  .label {
+    width: 120px;
+    height: 40px;
+  }
+  .project {
+    height: 300px;
+    width: 450px;
+    font-size: 16px;
+    margin: 5px 10px;
+    border: solid 2px white;
+    & .picture-block {
+      height: 86%;
+      width: 100%;
+      background-color: rgb(216, 216, 216);
+      & img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    & .title {
+      height: 15%;
+      width: 100%;
+      background-color: rgb(177, 177, 177);
+      color: #2c3e50;
+      font-size: 15px;
+    }
+    & .btn {
+      height: 30px;
+      box-shadow: 1px 2px #585858;
+    }
+  }
+}
+
+#projetPupuce {
+  margin: 0 calc(50% - 50vw + 6px);
+  padding: 20px;
+  background-color: #97b9e5;
+
+  & .description {
+    padding: 10px calc(65vw - 65% - 8px) 10px;
+  }
+
+  & img {
+    height: 60px;
+    width: 60px;
+    margin-left: 10px;
+  }
+
+  & .showslideSpecificProjectBlock {
+    height: 68%;
+    width: 100%;
+    margin: 0 calc(50% - 50vw + 8px);
+    padding: 80px calc(50vw - 50% - 8px) 65px;
+    //Flex//
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.carousel {
+  max-height: 500px;
+  max-width: 800px;
+  & .carousel-item {
+    height: 500px;
+  }
+  & .carousel-control-prev-icon {
+    height: 200px;
+  }
+
+  & .carousel-control-next-icon {
+    height: 200px;
+  }
+}
+
+/* #bloccontact {
+  & .row {
+    padding: 80px calc(50vw - 50% - 8px) 65px;
+    margin: 0 calc(50% - 50vw + 8px);
+    & .photo {
+      height: 150px;
+      width: 120px;
+    }
+    & .socialnetwork {
+      height: 50px;
+      width: 50px;
+    }
+  }
+} */
