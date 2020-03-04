@@ -6,5 +6,27 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'cv';
+  title = 'cvweb';
+  public showPupuce = false;
+  public showNutriplusBlock = false;
+  public buttonName = 'Show';
+  constructor() { }
+
+  displayPupuceBlock() {
+    this.showPupuce = !this.showPupuce;
+    if (this.showPupuce) {
+      this.buttonName = 'Hide';
+    } else {
+      this.buttonName = 'Show';
+    }
+  }
+
+  displayNutriplusBlock() {
+    this.showNutriplusBlock = !this.showNutriplusBlock;
+    if (this.showNutriplusBlock) {
+      this.buttonName = 'Hide';
+    } else {
+      this.buttonName = 'Show';
+    }
+  }
 }
