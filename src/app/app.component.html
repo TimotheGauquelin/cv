@@ -1,4 +1,171 @@
-<app-header></app-header>
-<app-core></app-core>
-<app-footer></app-footer>
+<!-- Début de la Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand">Site de Timothé Gauquelin</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#blocaproposdemoi">A propos de moi <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#projects">Mes projets</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#bloccontact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- Fin de la Navbar -->
+<!-- Début de l'image -->
+<div class="background-img">
+  <img src="assets/garenagoya.jpg">
+  <a href="assets/CVmaquettefinal.pdf" download>
+  <button class="btn d-flex justify-content-center align-items-center border border-white ml-5 download-cv">
+    <div class="icon"><img src="assets/telecharger.png"> </div>
+    <div class="font-weight-bold">Telecharger CV</div>
+  </button></a>
+</div>
+<!-- Fin de l'image' -->
+<!-- Début des clefs -->
+<div class="d-flex flex-column justify-content-center align-items-center" id="blocaproposdemoi">
+  <h1>A propos de moi</h1>
+  <h3 class="align-self-center">Ces clefs qui me caracterisent</h3>
+  <div class="row mt-5 keys d-flex justify-content-around">
+    <div class="key d-flex flex-column justify-content-center align-items-center col-md-3 rounded">
+      <img class="icon" src="assets/teamwork.svg">
+      <p class="title font-weight-bold text-white">Travail d'équipe</p>
+      <p class="description text-white">Je suis convaincu qu'à plusieurs nous allons plus loin dans un projet que seul.
+      </p>
+    </div>
+    <div class="key d-flex flex-column justify-content-center align-items-center col-md-3 rounded">
+      <img class="icon" src="assets/community.svg">
+      <p class="title font-weight-bold text-white">Partage</p>
+      <p class="description text-white">Echanger, apporter et recevoir sont des atouts majeurs pour un projet solide..
+      </p>
+    </div>
+    <div class="key d-flex flex-column justify-content-center align-items-center col-md-3 rounded">
+      <img src="assets/business.svg">
+      <p class="title font-weight-bold text-white">Défi</p>
+      <p class="description text-white">Surmonter des difficultés et atteindre des objectifs sont des moteurs pour moi.
+      </p>
+    </div>
+    <div class="key d-flex flex-column justify-content-center align-items-center col-md-3 rounded">
+      <img class="icon" src="assets/charity.svg">
+      <p class="title font-weight-bold text-white">Honnêteté</p>
+      <p class="description text-white">L'engagement moral m'est important car il est à la base de la confiance.
+      </p>
+    </div>
+  </div>
+</div>
+<!-- Fin des clefs -->
+<!-- Début des projets -->
+<div class="text-white" id="projects">
+  <h1 class="d-flex justify-content-center">Mes projets</h1>
+  <div class="row mt-5 projects d-flex justify-content-around">
+    <div class="project d-flex flex-column justify-content-center align-items-center bg-success">
+      <div class="picture-block d-flex"><img src="assets/PupuceImage/accueil.jpg"></div>
+      <div class="title d-flex justify-content-around align-items-center font-weight-bold">
+        <div> Pupuce - Projet pour Faches-Thusmenil </div>
+        <a class="nav-link" href="#projetPupuce"> <button class="btn bg-success rounded text-white font-weight-bold" (click)="displayPupuceBlock()">
+          <p>En voir plus ! </p>
+        </button> </a>
+      </div>
+    </div>
+    <div class="project d-flex flex-column justify-content-center align-items-center bg-warning">
+      <div class="picture-block d-flex"><img src="assets/NutriplusImage/accueil.jpg"></div>
+      <div class="title d-flex justify-content-around align-items-center font-weight-bold">
+        <div> Nutriplus - Projet personnel mobile </div>
+        <button class="btn bg-danger align-items-center rounded text-white font-weight-bold" disabled>
+          <p>En travaux ! </p>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="d-flex flex-column justify-content-center align-items-center" id="projetPupuce" *ngIf=showPupuce>
+  <div class="title d-flex text-white">
+    <h3>Nom du projet : Pupuce</h3>
+    <div class="label bg-warning text-white rounded justify-content-center align-items-center p-2 ml-2">Projet scolaire
+    </div>
+  </div>
+  <h5 class="description align-self-center text-white">Ce projet a été crée dans le cadre de la formation que j'ai
+    effectué. Avec
+    mes cinq collègues, nous avions pour but de digitaliser le marché aux puces de Faches-Thusmenil. </h5>
+  <div class="row d-flex justify-content-around">
+    <img src="assets/iconHTML.png" alt="HTML">
+    <img src="assets/iconCSS.png" alt="CSS">
+    <img src="assets/iconANGULAR.png" alt="ANGULAR">
+    <img src="assets/iconJAVA.png" alt="JAVA">
+    <img src="assets/iconMYSQL.png" alt="MYSQL">
+  </div>
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner m-3">
+      <div class="carousel-item active">
+        <img class="d-block h-100 w-100" src="assets/PupuceImage/accueil.jpg">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block h-100 w-100" src="assets/PupuceImage/informations.jpg">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block h-100 w-100" src="assets/PupuceImage/informations2.jpg">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block h-100 w-100" src="assets/PupuceImage/informationsvalidées.jpg">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block h-100 w-100" src="assets/PupuceImage/justificatifs.jpg">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block h-100 w-100" src="assets/PupuceImage/emplacement.jpg">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block h-100 w-100" src="assets/PupuceImage/emplacement2.jpg">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block h-100 w-100" src="assets/PupuceImage/paiement.jpg">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block h-100 w-100" src="assets/PupuceImage/inscriptionTerminee.jpg">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+      <span class="sr-only">Précèdent</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+      <span class="sr-only">Suivant</span>
+    </a>
+  </div>
+</div>
+<!-- Fin des projets -->
+<!-- Début du Footer -->
+
+<!-- Fin du Footer -->
 <router-outlet></router-outlet>
+
+<!-- <div id="bloccontact">
+  <div class="row d-flex font-weight-bold">
+    <div class="d-flex"> <img class="photo border border-dark" src="assets/profil.jpg">
+    <div class="col-2 d-flex flex-column justify-content-center align-items-center bg-warning">
+      <p>Developpeur Web & Web Mobile <br>
+        (Recherche Stage en Full-Stack)</p></div>
+   
+    <div id="socialnetworks">
+        <div class="socialnetwork bg-network"><a href="https://www.linkedin.com/in/timothé-gauquelin-949272189"><img
+              src="assets/linkedin.svg"></a></div>
+      </div> 
+    </div>
+    <div class="col-2 bg-info">
+      <p>COORDONNÉES : <br>
+        Tél. +33 (0)6 41 97 99 90 <br>
+        60 rue Jean-Baptiste Defaux <br>
+        59260 Lezennes </p>
+    </div>
+  </div>
+</div> -->
