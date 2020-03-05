@@ -8,28 +8,6 @@
   }
 }
 
-.download-cv {
-  height: 90px;
-  width: 230px;
-  background-color: rgba(171, 187, 194, 0.75);
-  position: absolute;
-  bottom: 170px;
-  //Police//
-  font-size: 20px;
-  &:hover {
-    background-color: rgba(171, 187, 194, 1);
-    cursor: pointer;
-  }
-  & a:link {
-    color: black;
-    text-decoration: none;
-  }
-  & img {
-    height: 25px;
-    width: 25px;
-  }
-}
-
 #blocaproposdemoi {
   padding: 80px calc(50vw - 50% - 8px) 65px;
 
