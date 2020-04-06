@@ -19,10 +19,12 @@
   }
 }
 
-#blocaproposdemoi {
+// Début de About //
+
+#about {
   padding: 80px calc(50vw - 50% - 8px) 65px;
 
-  .key {
+	& .key {
     height: 400px;
     max-width: 330px;
     background-color: #5c93d9;
@@ -51,7 +53,6 @@
     }
   }
 }
-
 #projects {
   padding: 80px calc(50vw - 50% - 8px) 65px;
   background-color: #5c93d9;
@@ -115,7 +116,7 @@
   }
 }
 
-#projetPupuce {
+#projetPupuce, #projetNutriplus, #projetPokedex {
   padding: 20px;
   background-color: #97b9e5;
 
@@ -161,7 +162,7 @@
   }
 }
 
-#bloccontact {
+#info {
   & .row {
     height: 50px;
   }

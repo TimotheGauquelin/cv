@@ -8,11 +8,12 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'cvweb';
   public showPupuce = false;
-  public showNutriplusBlock = false;
+  public showNutriplus = false;
+  public showPokedex = false;
   public buttonName = 'Show';
   constructor() { }
 
-  displayPupuceBlock() {
+  displayPupuce() {
     this.showPupuce = !this.showPupuce;
     if (this.showPupuce) {
       this.buttonName = 'Hide';
@@ -21,9 +22,18 @@ export class AppComponent {
     }
   }
 
-  displayNutriplusBlock() {
-    this.showNutriplusBlock = !this.showNutriplusBlock;
-    if (this.showNutriplusBlock) {
+  displayNutriplus() {
+    this.showNutriplus = !this.showNutriplus;
+    if (this.showNutriplus) {
+      this.buttonName = 'Hide';
+    } else {
+      this.buttonName = 'Show';
+    }
+  }
+
+  displayPokedex() {
+    this.showPokedex = !this.showPokedex;
+    if (this.showPokedex) {
       this.buttonName = 'Hide';
     } else {
       this.buttonName = 'Show';
